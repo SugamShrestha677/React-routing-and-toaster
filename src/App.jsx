@@ -6,6 +6,7 @@ import About from './WebPage/About'
 import Navbar from './WebPage/Navbar'
 import Footer from './WebPage/Footer'
 import Contact from './WebPage/Contact'
+import Course from './WebPage/Course'
 const App = () => {
   return (
     <div>
@@ -15,6 +16,7 @@ const App = () => {
         <Route path='/' element={<HomePage/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contact/>}/>
+        <Route path='/courses/:id' element={<Course/>}/>
       </Routes>
       <Footer/>
       </BrowserRouter>
